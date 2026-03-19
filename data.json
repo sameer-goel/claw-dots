@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "title": "Claw Dots",
+    "subtitle": "Tracking the convergence toward Agentic OS",
+    "lastUpdated": "2026-03-19",
+    "version": "2.0"
+  },
+  "paths": [
+    {
+      "id": "foundation-models",
+      "label": "Foundation Models",
+      "color": "#3b82f6",
+      "icon": "🧠",
+      "description": "The brains — LLMs that power everything",
+      "pieces": [
+        {
+          "id": "fm-1",
+          "label": "GPT-4",
+          "player": "OpenAI",
+          "date": "2023-03",
+          "type": "milestone",
+          "detail": "First model smart enough to use tools reliably",
+          "funding": "$10B from Microsoft"
+        },
+        {
+          "id": "fm-2",
+          "label": "Claude 3 Opus",
+          "player": "Anthropic",
+          "date": "2024-03",
+          "type": "milestone",
+          "detail": "Constitutional AI — safety-first reasoning"
+        },
+        {
+          "id": "fm-3",
+          "label": "Gemini 2.0",
+          "player": "Google",
+          "date": "2024-12",
+          "type": "milestone",
+          "detail": "Native multimodal + code execution"
+        },
+        {
+          "id": "fm-4",
+          "label": "Claude Opus 4.6",
+          "player": "Anthropic",
+          "date": "2026-02",
+          "type": "breakthrough",
+          "detail": "1M tokens, 14.5h task horizon, agent teams",
+          "funding": "$350B valuation"
+        },
+        {
+          "id": "fm-5",
+          "label": "Open-weight wave",
+          "player": "Meta / Mistral / DeepSeek",
+          "date": "2025-2026",
+          "type": "trend",
+          "detail": "Llama 3, Mistral Large, DeepSeek — commoditizing intelligence",
+          "funding": "Mistral $14B val"
+        }
+      ]
+    },
+    {
+      "id": "computer-use",
+      "label": "Computer Use",
+      "color": "#8b5cf6",
+      "icon": "🖥️",
+      "description": "AI that can see and control screens like humans",
+      "pieces": [
+        {
+          "id": "cu-1",
+          "label": "Claude Computer Use",
+          "player": "Anthropic",
+          "date": "2024-10",
+          "type": "milestone",
+          "detail": "First commercial model controlling mouse & keyboard"
+        },
+        {
+          "id": "cu-2",
+          "label": "Rabbit R1 / LAM",
+          "player": "Rabbit",
+          "date": "2024-01",
+          "type": "milestone",
+          "detail": "Large Action Model — learn apps by watching users"
+        },
+        {
+          "id": "cu-3",
+          "label": "Humane AI Pin ☠️",
+          "player": "Humane",
+          "date": "2024-2025",
+          "type": "failure",
+          "detail": "Acquired by HP Feb 2025 — all devices bricked"
+        },
+        {
+          "id": "cu-4",
+          "label": "Claude Cowork",
+          "player": "Anthropic",
+          "date": "2026-01",
+          "type": "breakthrough",
+          "detail": "Assign complex tasks, Claude builds plan & executes autonomously"
+        },
+        {
+          "id": "cu-5",
+          "label": "Operator / CUA",
+          "player": "OpenAI",
+          "date": "2025-01",
+          "type": "milestone",
+          "detail": "Computer-Using Agent — browse & act on the web"
+        }
+      ]
+    },
+    {
+      "id": "agent-frameworks",
+      "label": "Agent Frameworks",
+      "color": "#f97316",
+      "icon": "⚙️",
+      "description": "The plumbing that connects models to actions",
+      "pieces": [
+        {
+          "id": "af-1",
+          "label": "AutoGPT",
+          "player": "Community",
+          "date": "2023-04",
+          "type": "milestone",
+          "detail": "The OG autonomous agent — proved the concept"
+        },
+        {
+          "id": "af-2",
+          "label": "LangChain / CrewAI",
+          "player": "LangChain / CrewAI",
+          "date": "2023-2024",
+          "type": "trend",
+          "detail": "Orchestration frameworks — chains, agents, tools"
+        },
+        {
+          "id": "af-3",
+          "label": "OpenClaw",
+          "player": "OpenClaw",
+          "date": "2024-2025",
+          "type": "breakthrough",
+          "detail": "Open-source agent runtime — LLM → real software. Going viral in 2026",
+          "funding": "Open source / community"
+        },
+        {
+          "id": "af-4",
+          "label": "NemoClaw",
+          "player": "NVIDIA",
+          "date": "2025-03",
+          "type": "milestone",
+          "detail": "Enterprise security stack on top of OpenClaw — guardrails + policy"
+        },
+        {
+          "id": "af-5",
+          "label": "Baidu & Alibaba agents",
+          "player": "Baidu / Alibaba",
+          "date": "2026",
+          "type": "trend",
+          "detail": "Chinese tech giants building on OpenClaw framework"
+        }
+      ]
+    },
+    {
+      "id": "agent-protocols",
+      "label": "Agent Protocols",
+      "color": "#06b6d4",
+      "icon": "🔗",
+      "description": "How agents talk to each other and to tools",
+      "pieces": [
+        {
+          "id": "ap-1",
+          "label": "Function Calling",
+          "player": "OpenAI",
+          "date": "2023-06",
+          "type": "milestone",
+          "detail": "Structured tool use — the primitive that enabled agents"
+        },
+        {
+          "id": "ap-2",
+          "label": "MCP",
+          "player": "Anthropic",
+          "date": "2024-11",
+          "type": "milestone",
+          "detail": "Model Context Protocol — universal agent-to-tool standard"
+        },
+        {
+          "id": "ap-3",
+          "label": "A2A",
+          "player": "Google",
+          "date": "2025",
+          "type": "milestone",
+          "detail": "Agent-to-Agent protocol — agents discover & collaborate"
+        },
+        {
+          "id": "ap-4",
+          "label": "ACP",
+          "player": "BeeAI / IBM",
+          "date": "2025",
+          "type": "milestone",
+          "detail": "Agent Communication Protocol — local-first agent messaging"
+        },
+        {
+          "id": "ap-5",
+          "label": "Protocol wars",
+          "player": "Industry",
+          "date": "2026",
+          "type": "prediction",
+          "detail": "10+ competing standards. Convergence expected by 2027. MCP + A2A leading."
+        }
+      ]
+    },
+    {
+      "id": "agent-os",
+      "label": "Agentic OS Platforms",
+      "color": "#ef4444",
+      "icon": "🏗️",
+      "description": "Full operating systems for AI agents — the endgame",
+      "pieces": [
+        {
+          "id": "os-1",
+          "label": "Sierra Agent OS",
+          "player": "Sierra AI",
+          "date": "2024-2025",
+          "type": "milestone",
+          "detail": "Customer experience agent OS. $10B valuation.",
+          "funding": "$350M (Sep 2025)"
+        },
+        {
+          "id": "os-2",
+          "label": "Slack Agentic Workspace",
+          "player": "Salesforce / Slack",
+          "date": "2026",
+          "type": "trend",
+          "detail": "Positioning as THE agentic work OS — teams + AI agents unified"
+        },
+        {
+          "id": "os-3",
+          "label": "ZyG",
+          "player": "ZyG",
+          "date": "2026-03",
+          "type": "milestone",
+          "detail": "Agentic OS for DTC e-commerce — marketing, logistics, CX automated",
+          "funding": "$58M seed"
+        },
+        {
+          "id": "os-4",
+          "label": "Lyzr",
+          "player": "Lyzr",
+          "date": "2025-10",
+          "type": "milestone",
+          "detail": "Enterprise agentic OS — private AI workforce across departments",
+          "funding": "$8M Series A"
+        },
+        {
+          "id": "os-5",
+          "label": "Airrived",
+          "player": "Airrived",
+          "date": "2026-02",
+          "type": "milestone",
+          "detail": "Agentic OS for cybersecurity + IT + biz ops",
+          "funding": "$6.1M seed"
+        },
+        {
+          "id": "os-6",
+          "label": "Maestro AI",
+          "player": "Maestro AI",
+          "date": "2026-02",
+          "type": "milestone",
+          "detail": "Agentic OS for mortgage origination — vertical play",
+          "funding": "$1.2M pre-seed"
+        },
+        {
+          "id": "os-7",
+          "label": "Kore.ai",
+          "player": "Kore.ai",
+          "date": "2025-2026",
+          "type": "trend",
+          "detail": "Multi-agent orchestration for CX + EX at scale"
+        }
+      ]
+    },
+    {
+      "id": "wearables",
+      "label": "AI Wearables & Devices",
+      "color": "#ec4899",
+      "icon": "⌚",
+      "description": "Physical devices that bring agents into the real world",
+      "pieces": [
+        {
+          "id": "wd-1",
+          "label": "Humane AI Pin ☠️",
+          "player": "Humane",
+          "date": "2023-2025",
+          "type": "failure",
+          "detail": "Vision killed by bad execution. Acquired by HP, all devices dead."
+        },
+        {
+          "id": "wd-2",
+          "label": "Rabbit R1",
+          "player": "Rabbit",
+          "date": "2024-2026",
+          "type": "trend",
+          "detail": "Survived via software overhauls (RabbitOS 2). Still iterating."
+        },
+        {
+          "id": "wd-3",
+          "label": "Limitless Pendant",
+          "player": "Limitless",
+          "date": "2025",
+          "type": "milestone",
+          "detail": "100h battery, captures conversations → AI summaries & actions"
+        },
+        {
+          "id": "wd-4",
+          "label": "Omi AI",
+          "player": "Omi",
+          "date": "2025-2026",
+          "type": "trend",
+          "detail": "Open-source ambient intelligence wearable — privacy-first"
+        },
+        {
+          "id": "wd-5",
+          "label": "Meta Ray-Bans + AI",
+          "player": "Meta",
+          "date": "2025-2026",
+          "type": "trend",
+          "detail": "Smart glasses with multimodal AI — see, hear, act"
+        }
+      ]
+    }
+  ],
+  "convergenceNode": {
+    "id": "agentic-os-convergence",
+    "label": "Agentic OS",
+    "detail": "All paths converge: Foundation Models + Computer Use + Frameworks + Protocols + Platforms + Devices = The Agent Operating System",
+    "prediction": "By 2027, your OS IS an agent. Not an app you open — the entire interface.",
+    "marketSize": "$12-15B in 2026 → $52B by 2030"
+  }
+}
