@@ -3,325 +3,302 @@
     "title": "Claw Dots",
     "subtitle": "Tracking the convergence toward Agentic OS",
     "lastUpdated": "2026-03-19",
-    "version": "2.0"
+    "version": "2.0",
+    "totalSignals": 18,
+    "totalFundingTrackedM": 423,
+    "source": "neon-postgresql"
   },
   "paths": [
     {
-      "id": "foundation-models",
-      "label": "Foundation Models",
-      "color": "#3b82f6",
-      "icon": "🧠",
-      "description": "The brains — LLMs that power everything",
-      "pieces": [
-        {
-          "id": "fm-1",
-          "label": "GPT-4",
-          "player": "OpenAI",
-          "date": "2023-03",
-          "type": "milestone",
-          "detail": "First model smart enough to use tools reliably",
-          "funding": "$10B from Microsoft"
-        },
-        {
-          "id": "fm-2",
-          "label": "Claude 3 Opus",
-          "player": "Anthropic",
-          "date": "2024-03",
-          "type": "milestone",
-          "detail": "Constitutional AI — safety-first reasoning"
-        },
-        {
-          "id": "fm-3",
-          "label": "Gemini 2.0",
-          "player": "Google",
-          "date": "2024-12",
-          "type": "milestone",
-          "detail": "Native multimodal + code execution"
-        },
-        {
-          "id": "fm-4",
-          "label": "Claude Opus 4.6",
-          "player": "Anthropic",
-          "date": "2026-02",
-          "type": "breakthrough",
-          "detail": "1M tokens, 14.5h task horizon, agent teams",
-          "funding": "$350B valuation"
-        },
-        {
-          "id": "fm-5",
-          "label": "Open-weight wave",
-          "player": "Meta / Mistral / DeepSeek",
-          "date": "2025-2026",
-          "type": "trend",
-          "detail": "Llama 3, Mistral Large, DeepSeek — commoditizing intelligence",
-          "funding": "Mistral $14B val"
-        }
-      ]
-    },
-    {
-      "id": "computer-use",
-      "label": "Computer Use",
-      "color": "#8b5cf6",
-      "icon": "🖥️",
-      "description": "AI that can see and control screens like humans",
-      "pieces": [
-        {
-          "id": "cu-1",
-          "label": "Claude Computer Use",
-          "player": "Anthropic",
-          "date": "2024-10",
-          "type": "milestone",
-          "detail": "First commercial model controlling mouse & keyboard"
-        },
-        {
-          "id": "cu-2",
-          "label": "Rabbit R1 / LAM",
-          "player": "Rabbit",
-          "date": "2024-01",
-          "type": "milestone",
-          "detail": "Large Action Model — learn apps by watching users"
-        },
-        {
-          "id": "cu-3",
-          "label": "Humane AI Pin ☠️",
-          "player": "Humane",
-          "date": "2024-2025",
-          "type": "failure",
-          "detail": "Acquired by HP Feb 2025 — all devices bricked"
-        },
-        {
-          "id": "cu-4",
-          "label": "Claude Cowork",
-          "player": "Anthropic",
-          "date": "2026-01",
-          "type": "breakthrough",
-          "detail": "Assign complex tasks, Claude builds plan & executes autonomously"
-        },
-        {
-          "id": "cu-5",
-          "label": "Operator / CUA",
-          "player": "OpenAI",
-          "date": "2025-01",
-          "type": "milestone",
-          "detail": "Computer-Using Agent — browse & act on the web"
-        }
-      ]
-    },
-    {
       "id": "agent-frameworks",
       "label": "Agent Frameworks",
+      "icon": "\u2699\ufe0f",
       "color": "#f97316",
-      "icon": "⚙️",
-      "description": "The plumbing that connects models to actions",
+      "description": "",
       "pieces": [
         {
-          "id": "af-1",
-          "label": "AutoGPT",
-          "player": "Community",
-          "date": "2023-04",
-          "type": "milestone",
-          "detail": "The OG autonomous agent — proved the concept"
-        },
-        {
-          "id": "af-2",
-          "label": "LangChain / CrewAI",
-          "player": "LangChain / CrewAI",
-          "date": "2023-2024",
-          "type": "trend",
-          "detail": "Orchestration frameworks — chains, agents, tools"
-        },
-        {
-          "id": "af-3",
-          "label": "OpenClaw",
-          "player": "OpenClaw",
-          "date": "2024-2025",
-          "type": "breakthrough",
-          "detail": "Open-source agent runtime — LLM → real software. Going viral in 2026",
-          "funding": "Open source / community"
-        },
-        {
-          "id": "af-4",
-          "label": "NemoClaw",
+          "id": "sig-20260319-nemoclaw",
+          "label": "NVIDIA NemoClaw \u2014 enterprise security for OpenClaw",
           "player": "NVIDIA",
           "date": "2025-03",
           "type": "milestone",
-          "detail": "Enterprise security stack on top of OpenClaw — guardrails + policy"
+          "detail": "Open-source security stack on top of OpenClaw. Policy-based guardrails, privacy controls. Enterprise seal of approval.",
+          "impact_score": 8,
+          "connections": [
+            "sig-20260319-openclaw-viral"
+          ],
+          "source_url": "https://www.nvidia.com/en-us/ai/nemoclaw/"
         },
         {
-          "id": "af-5",
-          "label": "Baidu & Alibaba agents",
+          "id": "sig-20260319-openclaw-viral",
+          "label": "OpenClaw goes viral \u2014 open-source agent runtime",
+          "player": "OpenClaw",
+          "date": "2026",
+          "type": "breakthrough",
+          "detail": "Open-source platform connecting LLMs to real software. Read/write files, run commands, browse web, send emails, control APIs. Free and extensible.",
+          "impact_score": 9,
+          "connections": [
+            "sig-20260319-nemoclaw",
+            "sig-20260319-baidu-alibaba"
+          ],
+          "source_url": "https://www.kdnuggets.com/openclaw-explained-the-free-ai-agent-tool-going-viral-already-in-2026"
+        },
+        {
+          "id": "sig-20260319-baidu-alibaba",
+          "label": "Baidu & Alibaba build agents on OpenClaw",
           "player": "Baidu / Alibaba",
           "date": "2026",
           "type": "trend",
-          "detail": "Chinese tech giants building on OpenClaw framework"
+          "detail": "Chinese tech giants embracing OpenClaw framework. Building agents for video editing, presentations, research across apps and devices.",
+          "impact_score": 8,
+          "connections": [
+            "sig-20260319-openclaw-viral"
+          ],
+          "source_url": "https://www.channelnewsasia.com/east-asia/china-tech-giants-alibaba-baidu-openclaw-craze-ai-5999441"
         }
       ]
     },
     {
       "id": "agent-protocols",
       "label": "Agent Protocols",
+      "icon": "\ud83d\udd17",
       "color": "#06b6d4",
-      "icon": "🔗",
-      "description": "How agents talk to each other and to tools",
+      "description": "",
       "pieces": [
         {
-          "id": "ap-1",
-          "label": "Function Calling",
-          "player": "OpenAI",
-          "date": "2023-06",
-          "type": "milestone",
-          "detail": "Structured tool use — the primitive that enabled agents"
-        },
-        {
-          "id": "ap-2",
-          "label": "MCP",
+          "id": "sig-20260319-mcp",
+          "label": "MCP \u2014 Model Context Protocol becomes standard",
           "player": "Anthropic",
           "date": "2024-11",
           "type": "milestone",
-          "detail": "Model Context Protocol — universal agent-to-tool standard"
+          "detail": "Universal agent-to-tool protocol. Adopted across frameworks. Becoming the USB-C of agent connectivity.",
+          "impact_score": 9,
+          "connections": [
+            "sig-20260319-a2a-protocol"
+          ]
         },
         {
-          "id": "ap-3",
-          "label": "A2A",
+          "id": "sig-20260319-a2a-protocol",
+          "label": "A2A \u2014 Google's Agent-to-Agent protocol",
           "player": "Google",
           "date": "2025",
           "type": "milestone",
-          "detail": "Agent-to-Agent protocol — agents discover & collaborate"
-        },
-        {
-          "id": "ap-4",
-          "label": "ACP",
-          "player": "BeeAI / IBM",
-          "date": "2025",
-          "type": "milestone",
-          "detail": "Agent Communication Protocol — local-first agent messaging"
-        },
-        {
-          "id": "ap-5",
-          "label": "Protocol wars",
-          "player": "Industry",
-          "date": "2026",
-          "type": "prediction",
-          "detail": "10+ competing standards. Convergence expected by 2027. MCP + A2A leading."
+          "detail": "Agents discover and collaborate with each other. Complementary to MCP (tools) \u2014 A2A handles agent-to-agent communication.",
+          "impact_score": 8,
+          "connections": [
+            "sig-20260319-mcp"
+          ]
         }
       ]
     },
     {
-      "id": "agent-os",
+      "id": "agentic-os-platforms",
       "label": "Agentic OS Platforms",
+      "icon": "\ud83c\udfd7\ufe0f",
       "color": "#ef4444",
-      "icon": "🏗️",
-      "description": "Full operating systems for AI agents — the endgame",
+      "description": "",
       "pieces": [
         {
-          "id": "os-1",
-          "label": "Sierra Agent OS",
+          "id": "sig-20260319-sierra-agent-os",
+          "label": "Sierra AI Agent OS hits $10B valuation",
           "player": "Sierra AI",
-          "date": "2024-2025",
+          "date": "2025-09",
           "type": "milestone",
-          "detail": "Customer experience agent OS. $10B valuation.",
-          "funding": "$350M (Sep 2025)"
+          "detail": "Sierra builds Agent OS for customer experience. $350M raise at $10B valuation. Expanding beyond CX into revenue-driving use cases.",
+          "impact_score": 9,
+          "connections": [
+            "sig-20260319-slack-agentic",
+            "sig-20260319-lyzr"
+          ],
+          "funding": "$350M (Sep 2025)",
+          "source_url": "https://www.cmswire.com/customer-experience/sierra-ais-10b-valuation-marks-a-turning-point-for-conversational-ai/"
         },
         {
-          "id": "os-2",
-          "label": "Slack Agentic Workspace",
-          "player": "Salesforce / Slack",
-          "date": "2026",
-          "type": "trend",
-          "detail": "Positioning as THE agentic work OS — teams + AI agents unified"
-        },
-        {
-          "id": "os-3",
-          "label": "ZyG",
-          "player": "ZyG",
-          "date": "2026-03",
-          "type": "milestone",
-          "detail": "Agentic OS for DTC e-commerce — marketing, logistics, CX automated",
-          "funding": "$58M seed"
-        },
-        {
-          "id": "os-4",
-          "label": "Lyzr",
+          "id": "sig-20260319-lyzr",
+          "label": "Lyzr raises $8M to build enterprise Agentic OS",
           "player": "Lyzr",
           "date": "2025-10",
           "type": "milestone",
-          "detail": "Enterprise agentic OS — private AI workforce across departments",
-          "funding": "$8M Series A"
+          "detail": "Enterprise agentic OS \u2014 private AI workforce collaborating across departments. Series A from notable investors.",
+          "impact_score": 6,
+          "connections": [
+            "sig-20260319-sierra-agent-os",
+            "sig-20260319-airrived"
+          ],
+          "funding": "$8M Series A",
+          "source_url": "https://www.lyzr.ai/blog/lyzr-raising-series-a/"
         },
         {
-          "id": "os-5",
-          "label": "Airrived",
-          "player": "Airrived",
-          "date": "2026-02",
-          "type": "milestone",
-          "detail": "Agentic OS for cybersecurity + IT + biz ops",
-          "funding": "$6.1M seed"
-        },
-        {
-          "id": "os-6",
-          "label": "Maestro AI",
-          "player": "Maestro AI",
-          "date": "2026-02",
-          "type": "milestone",
-          "detail": "Agentic OS for mortgage origination — vertical play",
-          "funding": "$1.2M pre-seed"
-        },
-        {
-          "id": "os-7",
-          "label": "Kore.ai",
+          "id": "sig-20260319-koreai",
+          "label": "Kore.ai multi-agent orchestration at scale",
           "player": "Kore.ai",
           "date": "2025-2026",
           "type": "trend",
-          "detail": "Multi-agent orchestration for CX + EX at scale"
+          "detail": "Enterprise-grade multi-agent orchestration engine for CX + EX + business processes.",
+          "impact_score": 7,
+          "connections": [
+            "sig-20260319-slack-agentic"
+          ],
+          "source_url": "https://www.kore.ai/blog/7-best-agentic-ai-platforms"
+        },
+        {
+          "id": "sig-20260319-market-size",
+          "label": "AI Agent market: $12-15B (2026) \u2192 $52B by 2030",
+          "player": "Industry",
+          "date": "2026",
+          "type": "trend",
+          "detail": "Market growing from $7.84B (2025) to $12-15B (2026). Projected $52B by 2030. Fastest-scaling AI category.",
+          "impact_score": 8,
+          "connections": [],
+          "source_url": "https://techfundingnews.com/top-10-us-ai-agents-2026-fastest-scaling-category-52b-by-2030/"
+        },
+        {
+          "id": "sig-20260319-slack-agentic",
+          "label": "Slack positions as agentic work OS",
+          "player": "Salesforce / Slack",
+          "date": "2026",
+          "type": "trend",
+          "detail": "Slack integrating teams, apps, data, and AI agents into single workspace. Positioning as THE agentic work operating system for enterprise.",
+          "impact_score": 8,
+          "connections": [
+            "sig-20260319-sierra-agent-os",
+            "sig-20260319-koreai"
+          ],
+          "source_url": "https://slack.com/blog/productivity/best-agentic-ai-platforms-for-2026-what-they-are-and-how-to-choose-one"
+        },
+        {
+          "id": "sig-20260319-airrived",
+          "label": "Airrived emerges with Agentic OS for cybersecurity",
+          "player": "Airrived",
+          "date": "2026-02",
+          "type": "milestone",
+          "detail": "Stealth launch. Agentic OS unifying cybersecurity, IT, and business operations in enterprises.",
+          "impact_score": 6,
+          "connections": [
+            "sig-20260319-lyzr"
+          ],
+          "funding": "$6.1M seed",
+          "source_url": "https://www.securityweek.com/airrived-emerges-from-stealth-with-6-1-million-in-funding/"
+        },
+        {
+          "id": "sig-20260319-maestro-mortgage",
+          "label": "Maestro AI \u2014 Agentic OS for mortgage origination",
+          "player": "Maestro AI",
+          "date": "2026-02",
+          "type": "milestone",
+          "detail": "Vertical Agentic OS play \u2014 mortgage origination. Pre-seed stage but signals the pattern: every vertical gets its own agent OS.",
+          "impact_score": 4,
+          "connections": [
+            "sig-20260319-zyg-agentic-ecom"
+          ],
+          "funding": "$1.2M pre-seed",
+          "source_url": "https://www.mexc.com/news/698046"
+        },
+        {
+          "id": "sig-20260319-zyg-agentic-ecom",
+          "label": "ZyG raises $58M for Agentic OS in e-commerce",
+          "player": "ZyG",
+          "date": "2026-03",
+          "type": "milestone",
+          "detail": "Agentic OS for DTC e-commerce \u2014 automates marketing, logistics, customer acquisition, and financing. Largest seed round in agentic OS space.",
+          "impact_score": 8,
+          "connections": [
+            "sig-20260319-sierra-agent-os"
+          ],
+          "funding": "$58M seed",
+          "source_url": "https://retailtechinnovationhub.com/home/2026/3/5/zyg-lands-58-million-in-seed-funding-to-expand-ai-powered-agentic-dtc-e-commerce-platform"
         }
       ]
     },
     {
-      "id": "wearables",
-      "label": "AI Wearables & Devices",
-      "color": "#ec4899",
-      "icon": "⌚",
-      "description": "Physical devices that bring agents into the real world",
+      "id": "computer-use",
+      "label": "Computer Use",
+      "icon": "\ud83d\udda5\ufe0f",
+      "color": "#8b5cf6",
+      "description": "",
       "pieces": [
         {
-          "id": "wd-1",
-          "label": "Humane AI Pin ☠️",
-          "player": "Humane",
-          "date": "2023-2025",
-          "type": "failure",
-          "detail": "Vision killed by bad execution. Acquired by HP, all devices dead."
-        },
+          "id": "sig-20260319-claude-cowork",
+          "label": "Claude Cowork \u2014 autonomous task execution",
+          "player": "Anthropic",
+          "date": "2026-01",
+          "type": "breakthrough",
+          "detail": "Assign complex tasks, Claude reviews materials, builds structured plan, executes workflow autonomously. No constant prompting needed.",
+          "impact_score": 9,
+          "connections": [
+            "sig-20260319-claude-opus46"
+          ],
+          "source_url": "https://fazal-sec.medium.com/anthropics-explosive-start-to-2026-everything-claude-has-launched-and-why-it-s-shaking-up-the-668788c2c9de"
+        }
+      ]
+    },
+    {
+      "id": "foundation-models",
+      "label": "Foundation Models",
+      "icon": "\ud83e\udde0",
+      "color": "#3b82f6",
+      "description": "",
+      "pieces": [
         {
-          "id": "wd-2",
-          "label": "Rabbit R1",
-          "player": "Rabbit",
-          "date": "2024-2026",
-          "type": "trend",
-          "detail": "Survived via software overhauls (RabbitOS 2). Still iterating."
-        },
+          "id": "sig-20260319-claude-opus46",
+          "label": "Claude Opus 4.6 \u2014 1M tokens, 14.5h task horizon",
+          "player": "Anthropic",
+          "date": "2026-02",
+          "type": "breakthrough",
+          "detail": "1M-token context window, 14.5-hour autonomous task completion, agent teams for parallel work. The brain that makes agentic OS possible.",
+          "impact_score": 10,
+          "connections": [
+            "sig-20260319-claude-cowork"
+          ],
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-6"
+        }
+      ]
+    },
+    {
+      "id": "wearables-devices",
+      "label": "AI Wearables & Devices",
+      "icon": "\u231a",
+      "color": "#ec4899",
+      "description": "",
+      "pieces": [
         {
-          "id": "wd-3",
-          "label": "Limitless Pendant",
+          "id": "sig-20260319-limitless-pendant",
+          "label": "Limitless Pendant \u2014 100h ambient AI memory",
           "player": "Limitless",
           "date": "2025",
           "type": "milestone",
-          "detail": "100h battery, captures conversations → AI summaries & actions"
+          "detail": "Wearable that captures conversations, transcribes, extracts summaries and action items. 100-hour battery. Personal memory assistant.",
+          "impact_score": 6,
+          "connections": [
+            "sig-20260319-humane-dead",
+            "sig-20260319-omi-ai"
+          ],
+          "source_url": "https://terrahustle.com/best-ai-wearable-assistants/"
         },
         {
-          "id": "wd-4",
-          "label": "Omi AI",
+          "id": "sig-20260319-humane-dead",
+          "label": "Humane AI Pin dies \u2014 acquired by HP",
+          "player": "Humane",
+          "date": "2025-02",
+          "type": "failure",
+          "detail": "All devices bricked after HP acquisition. $230M raised, $0 value delivered. Lesson: hardware without reliable software = death.",
+          "impact_score": 7,
+          "connections": [
+            "sig-20260319-limitless-pendant"
+          ],
+          "source_url": "https://www.producthunt.com/products/humane-ai-pin/alternatives"
+        },
+        {
+          "id": "sig-20260319-omi-ai",
+          "label": "Omi AI \u2014 open-source ambient intelligence wearable",
           "player": "Omi",
           "date": "2025-2026",
           "type": "trend",
-          "detail": "Open-source ambient intelligence wearable — privacy-first"
-        },
-        {
-          "id": "wd-5",
-          "label": "Meta Ray-Bans + AI",
-          "player": "Meta",
-          "date": "2025-2026",
-          "type": "trend",
-          "detail": "Smart glasses with multimodal AI — see, hear, act"
+          "detail": "Open-source wearable, privacy-first, pairs with existing phone. Community-driven ambient AI layer.",
+          "impact_score": 5,
+          "connections": [
+            "sig-20260319-limitless-pendant"
+          ]
         }
       ]
     }
@@ -330,7 +307,76 @@
     "id": "agentic-os-convergence",
     "label": "Agentic OS",
     "detail": "All paths converge: Foundation Models + Computer Use + Frameworks + Protocols + Platforms + Devices = The Agent Operating System",
-    "prediction": "By 2027, your OS IS an agent. Not an app you open — the entire interface.",
-    "marketSize": "$12-15B in 2026 → $52B by 2030"
-  }
+    "prediction": "By 2027, your OS IS an agent. Not an app you open \u2014 the entire interface.",
+    "marketSize": "$12-15B in 2026 \u2192 $52B by 2030"
+  },
+  "researchQueries": [
+    {
+      "query": "\"agentic operating system\" OR \"agent OS\" funding startup",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "crunchbase",
+        "techcrunch"
+      ]
+    },
+    {
+      "query": "OpenClaw new features release changelog",
+      "frequency": "daily",
+      "sources": [
+        "github",
+        "docs"
+      ]
+    },
+    {
+      "query": "AI agent framework comparison 2026",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "reddit",
+        "hackernews"
+      ]
+    },
+    {
+      "query": "MCP A2A ACP agent protocol adoption",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "github"
+      ]
+    },
+    {
+      "query": "AI wearable device launch 2026",
+      "frequency": "monthly",
+      "sources": [
+        "google",
+        "producthunt"
+      ]
+    },
+    {
+      "query": "Claude computer use autonomous agent",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "anthropic"
+      ]
+    },
+    {
+      "query": "enterprise AI agent deployment case study",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "mckinsey",
+        "gartner"
+      ]
+    },
+    {
+      "query": "AI agent security vulnerability guardrails",
+      "frequency": "weekly",
+      "sources": [
+        "google",
+        "securityweek"
+      ]
+    }
+  ]
 }
